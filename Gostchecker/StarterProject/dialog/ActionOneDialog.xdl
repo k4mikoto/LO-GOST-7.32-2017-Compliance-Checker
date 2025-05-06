@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="Gostchecker" dlg:left="172" dlg:top="59" dlg:width="319" dlg:height="264" dlg:closeable="true" dlg:moveable="true" dlg:title="И59526 ВКР">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:background-color="0xffffff" dlg:text-color="0x10000" dlg:border="simple" dlg:font-name="Tahoma" dlg:font-height="10" dlg:font-stylename="Regular" dlg:font-family="swiss"/>
+  <dlg:style dlg:style-id="1" dlg:border="none"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="Label1" dlg:tab-index="0" dlg:left="2" dlg:top="5" dlg:width="53" dlg:height="8" dlg:value="Текущий документ:"/>
+  <dlg:button dlg:id="CheckButton" dlg:tab-index="1" dlg:left="275" dlg:top="4" dlg:width="42" dlg:height="12" dlg:value="Проверить">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:OnCheckButtonPress" script:language="UNO"/>
+  </dlg:button>
+  <dlg:textfield dlg:style-id="0" dlg:id="LogTextbox" dlg:tab-index="2" dlg:left="2" dlg:top="19" dlg:width="314" dlg:height="227" dlg:hscroll="true" dlg:vscroll="true" dlg:multiline="true" dlg:readonly="true"/>
+  <dlg:button dlg:id="CloseButton" dlg:tab-index="3" dlg:left="271" dlg:top="250" dlg:width="46" dlg:height="12" dlg:value="Выйти" dlg:button-type="cancel"/>
+  <dlg:button dlg:id="SaveButton" dlg:tab-index="4" dlg:disabled="true" dlg:left="2" dlg:top="250" dlg:width="46" dlg:height="12" dlg:value="Сохранить">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:OnSaveBtnPress" script:language="UNO"/>
+  </dlg:button>
+  <dlg:textfield dlg:style-id="1" dlg:id="DocNameField" dlg:tab-index="5" dlg:left="57" dlg:top="5" dlg:width="214" dlg:height="8" dlg:readonly="true"/>
+  <dlg:radiogroup>
+   <dlg:radio dlg:id="Choice2" dlg:tab-index="7" dlg:left="227" dlg:top="253" dlg:width="42" dlg:height="8" dlg:value="Отладка" dlg:group-name="1"/>
+   <dlg:radio dlg:id="Choice1" dlg:tab-index="6" dlg:left="188" dlg:top="253" dlg:width="38" dlg:height="8" dlg:value="Проверка" dlg:group-name="1" dlg:checked="true"/>
+  </dlg:radiogroup>
+ </dlg:bulletinboard>
+</dlg:window>
