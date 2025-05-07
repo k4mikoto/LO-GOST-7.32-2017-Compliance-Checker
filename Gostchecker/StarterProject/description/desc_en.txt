@@ -1,1 +1,0 @@
-A tool that lets you check your document for compliance with GOST 7.32-2017
